@@ -1,0 +1,13 @@
+[project]
+name = "hft-sim"
+version = "0.1.0"
+description = "Educational high-frequency trading system prototype with market data, strategy, risk, and paper execution."
+requires-python = ">=3.11"
+readme = "README.md"
+
+[project.scripts]
+hft-sim = "hft_sim.main:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
